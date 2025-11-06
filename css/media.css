@@ -1,0 +1,134 @@
+/* Consolidated responsive/media queries moved from style.css */
+
+@media (min-width: 1400px) {
+	.unlock-img--left img{ height: 609px; }
+	.unlock-img--right img{ height: 430px; }
+}
+
+@media (max-width: 991.98px) {
+	.xt-item { height: 280px; }
+	.ts-prev{ left: 16px; }
+	.ts-next{ right: 16px; }
+	.ts-avatar{ width:64px; height:64px; }
+	.ts-avatar.is-active{ width:84px; height:84px; }
+	.cta-panel { transform: translateY(22px); }
+}
+
+@media (max-width: 768px) {
+	.logo-wrapper { width: 96px; height: 96px; margin-bottom: -48px; }
+	.logo-wrapper img { width: 58px; height: 58px; }
+	.hero-section { padding: 4rem 1rem 3rem; }
+	.cta-panel {
+		flex-direction: column;
+		gap: 0.6rem;
+		text-align: center;
+		transform: translateY(30px);
+	}
+	.cta-dash { display: none; }
+}
+
+@media (max-width: 767.98px){
+	.unlock-img--left img{
+		height: clamp(320px, 70vw, 520px);
+	}
+	.unlock-img--right img{
+		height: clamp(260px, 62vw, 400px);
+	}
+}
+
+@media (max-width: 575.98px) {
+	.xt-section { padding: 2.75rem .75rem; }
+	.xt-item { height: 240px; }
+	.ts-section{ padding: 3rem .75rem 4rem; }
+	.ts-nav{ width:44px; height:44px; }
+	.cta-panel {
+		flex-direction: column;
+		gap: 0.65rem;
+		text-align: center;
+		padding: 0.9rem;
+	}
+	.site-footer {
+		padding-top: 4rem;
+	}
+	.footer-brand .brand-wordmark img {
+		height: 20px;
+	}
+}
+
+@media (max-width: 375px) {
+	/* Logo / navbar */
+	.logo-wrapper { width: 84px; height: 84px; margin-top: 0.6rem; margin-bottom: -42px; }
+	.logo-wrapper img { width: 52px; height: 52px; }
+
+	/* Hero adjustments */
+	.hero-section { padding: 3.2rem 0.75rem 2.2rem; margin-top: -1.2rem; border-radius: 18px; }
+	.hero-title { font-size: 1.5rem; }
+	.hero-text { font-size: 0.92rem; padding: 0 0.25rem; }
+	.contact-btn-primary, .contact-btn-light { padding: 0.45rem 1rem; font-size: 0.95rem; }
+	.hero-img-container { margin: 1.25rem auto 0; max-width: 92%; }
+
+	/* Unlock section */
+	.unlock-title { font-size: 1.5rem; max-width: 100%; }
+	.unlock-img--left img { height: clamp(280px, 50vw, 420px); }
+	.unlock-img--right img { height: clamp(220px, 40vw, 320px); }
+	.unlock-copy { font-size: 0.95rem; }
+
+	/* Extraordinary grid */
+	.xt-item { height: 220px; }
+	.xt-item img { height: 100%; }
+
+	/* Testimonials */
+	.ts-avatar { width: 56px; height: 56px; }
+	.ts-avatar.is-active { width: 72px; height: 72px; transform: translateY(-4px); }
+	.ts-quote { font-size: 0.92rem; padding: 0 0.5rem; }
+	.ts-nav { width: 44px; height: 44px; }
+	.ts-prev { left: 8px; }
+	.ts-next { right: 8px; }
+
+	/* CTA panel */
+	.cta-panel { padding: 1rem; transform: translateY(26px); }
+	.cta-text { font-size: 1.1rem; white-space: normal; }
+
+	/* Footer */
+	.site-footer { padding: 3.2rem 0 1rem; border-top-left-radius: 14px; border-top-right-radius: 14px; }
+	.footer-logo img { width: 36px; height: 36px; }
+	.newsletter .form-control { padding: 0.45rem 0.6rem; }
+	.social-btn { width: 34px; height: 34px; }
+}
+
+@media (max-width: 320px) {
+	/* Further reduce sizes for narrow 320px viewports */
+	.logo-wrapper { width: 72px; height: 72px; margin-top: 0.5rem; margin-bottom: -36px; }
+	.logo-wrapper img { width: 44px; height: 44px; }
+
+	.hero-section { padding: 2.6rem 0.6rem 1.8rem; border-radius: 14px; }
+	.hero-title { font-size: 1.35rem; line-height: 1.1; }
+	.hero-text { font-size: 0.88rem; max-width: 100%; }
+	.hero-img-container { margin: 1rem auto 0; }
+
+	/* Navbar links slightly smaller to avoid wrapping overflow */
+	.nav-link { font-size: 0.92rem; }
+	.navbar .navbar-toggler { margin-top: 0.2rem; }
+
+	.unlock-title { font-size: 1.3rem; }
+	.unlock-copy { font-size: 0.92rem; }
+	.unlock-img--left img { height: clamp(220px, 48vw, 360px); }
+	.unlock-img--right img { height: clamp(180px, 36vw, 260px); }
+
+	.xt-item { height: 200px; }
+	.xt-grid .col-md-6 { padding-left: 6px; padding-right: 6px; }
+
+	.ts-avatar { width: 48px; height: 48px; }
+	.ts-avatar.is-active { width: 64px; height: 64px; transform: translateY(-3px); }
+	.ts-quote { font-size: 0.88rem; }
+	.ts-nav { width: 40px; height: 40px; top: 48%; }
+
+	.cta-panel { transform: translateY(18px); padding: 0.8rem; }
+	.cta-text { font-size: 1rem; }
+	.copy { font-size: 0.82rem; }
+
+	/* Ensure inputs and buttons remain tappable */
+	.newsletter .form-control { font-size: 0.92rem; }
+	.contact-btn-primary, .unlock-cta, .cta-button { padding: 0.45rem 0.9rem; }
+}
+
